@@ -1,4 +1,4 @@
-package model;
+package cyker.springframework.petclinic.model;
 
 public class Vet extends Person{
 

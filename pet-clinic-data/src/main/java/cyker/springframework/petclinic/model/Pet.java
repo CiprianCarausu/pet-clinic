@@ -1,4 +1,4 @@
-package model;
+package cyker.springframework.petclinic.model;
 
 import java.time.LocalDate;
 

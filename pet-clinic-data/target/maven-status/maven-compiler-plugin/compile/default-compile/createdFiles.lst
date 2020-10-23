@@ -1,0 +1,5 @@
+cyker\springframework\petclinic\model\Owner.class
+cyker\springframework\petclinic\model\Person.class
+cyker\springframework\petclinic\model\PetType.class
+cyker\springframework\petclinic\model\Pet.class
+cyker\springframework\petclinic\model\Vet.class
