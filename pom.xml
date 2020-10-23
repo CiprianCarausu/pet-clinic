@@ -49,6 +49,7 @@
 
 
   <scm>
+      <connection>scm:svn:https://github.com/CiprianCarausu/pet-clinic</connection>
   <developerConnection>scm:git:git@github.com:CiprianCarausu/pet-clinic.git</developerConnection>
     <tag>pet-clinic-0.0.1</tag>
   </scm>
