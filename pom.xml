@@ -46,13 +46,14 @@
         </plugins>
     </build>
 
-    <scm>
+<!--    <scm>
         <connection>scm:git:git@github.com:CiprianCarausu/pet-clinic.git/</connection>
         <developerConnection>scm:git:git@github.com:CiprianCarausu/pet-clinic.git/</developerConnection>
         <url>https://github.com/CiprianCarausu/pet-clinic</url>
-    </scm>
- <!-- <scm>
+    </scm>-->
+ <scm>
   <developerConnection>scm:git:git@github.com:CiprianCarausu/pet-clinic.git</developerConnection>
     <tag>pet-clinic-0.0.1</tag>
-  </scm>-->
+  </scm>
+
 </project>
