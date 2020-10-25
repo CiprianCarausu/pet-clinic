@@ -3,9 +3,11 @@ package cyker.springframework.petclinic.services.map;
 import cyker.springframework.petclinic.model.Vet;
 import cyker.springframework.petclinic.services.CrudService;
 import cyker.springframework.petclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
