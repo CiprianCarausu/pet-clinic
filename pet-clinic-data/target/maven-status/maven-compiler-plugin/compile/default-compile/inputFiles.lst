@@ -1,5 +1,14 @@
-C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\model\Vet.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\model\BaseEntity.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\services\map\PetServiceMap.java
 C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\model\Person.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\services\CrudService.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\services\map\AbstractMapService.java
 C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\model\PetType.java
-C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\model\Owner.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\services\OwnerService.java
 C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\model\Pet.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\services\map\VetServiceMap.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\model\Vet.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\services\VetService.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\services\PetService.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\services\map\OwnerServiceMap.java
+C:\cyKer\Projects\pet-clinic-main\pet-clinic-data\src\main\java\cyker\springframework\petclinic\model\Owner.java
