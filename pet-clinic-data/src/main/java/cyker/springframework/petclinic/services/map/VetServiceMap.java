@@ -1,7 +1,8 @@
 package cyker.springframework.petclinic.services.map;
 
+import cyker.springframework.petclinic.model.Speciality;
 import cyker.springframework.petclinic.model.Vet;
-import cyker.springframework.petclinic.services.CrudService;
+import cyker.springframework.petclinic.services.SpecialtyService;
 import cyker.springframework.petclinic.services.VetService;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +10,13 @@ import java.util.Set;
 
 @Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+
+    private final SpecialtyService specialtyService;
+
+    public VetServiceMap(SpecialtyService specialtyService) {
+        this.specialtyService = specialtyService;
+    }
+
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
@@ -21,6 +29,15 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet save(Vet object) {
+
+        if (object.getSpecialities().size() > 0) {
+            object.getSpecialities().forEach(speciality -> {
+                if (speciality.getId() == null) {
+                    Speciality savedSpeciality = specialtyService.save(speciality);
+                    speciality.setId(savedSpeciality.getId());
+                }
+            });
+        }
         return super.save(object);
     }
 
