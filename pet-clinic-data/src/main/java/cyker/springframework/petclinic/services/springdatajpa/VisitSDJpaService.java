@@ -1,10 +1,10 @@
 package cyker.springframework.petclinic.services.springdatajpa;
 
 import cyker.springframework.petclinic.model.Visit;
+import cyker.springframework.petclinic.repositories.VisitRepository;
 import cyker.springframework.petclinic.services.VisitService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import repositories.VisitRepository;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package repositories;
+package cyker.springframework.petclinic.repositories;
 
 import cyker.springframework.petclinic.model.Visit;
 import org.springframework.data.repository.CrudRepository;

@@ -1,22 +1,21 @@
 package cyker.springframework.petclinic.services.springdatajpa;
 
 import cyker.springframework.petclinic.model.Owner;
+import cyker.springframework.petclinic.repositories.OwnerRepository;
+import cyker.springframework.petclinic.repositories.PetRepository;
+import cyker.springframework.petclinic.repositories.PetTypeRepository;
 import cyker.springframework.petclinic.services.OwnerService;
 import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-import repositories.OwnerRepository;
-import repositories.PetRepository;
-import repositories.PetTypeRepository;
 
-import java.util.HashMap;
+import java.sql.SQLOutput;
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
 @Service
 @Profile("springdatajpa")
 public class OwnerSDJpaService implements OwnerService {
+
 
     private final OwnerRepository ownerRepository;
     private final PetRepository petRepository;
@@ -43,22 +42,22 @@ public class OwnerSDJpaService implements OwnerService {
 
     @Override
     public Owner findById(Long aLong) {
-        Optional<Owner> optionalOwner = ownerRepository.findById(aLong);
-        return optionalOwner.orElse(null);
+        return ownerRepository.findById(aLong).orElse(null);
     }
 
     @Override
     public Owner save(Owner object) {
-        return null;
+        return ownerRepository.save(object);
     }
 
     @Override
     public void delete(Owner object) {
-
+ownerRepository.delete(object);
     }
 
     @Override
-    public void deleteById(Long object) {
+    public void deleteById(Long aLong) {
+        ownerRepository.deleteById(aLong);
 
     }
 }
