@@ -21,19 +21,19 @@ public class OwnerController {
 
     @RequestMapping({"", "/", "index", "index.html"})
     public String listOwners(Model model) {
-        model.addAttribute("owners",ownerService.findAll());
-
+        model.addAttribute("owners", ownerService.findAll());
         return "owners/index";
     }
 
     @RequestMapping("/find")
-    public String findOwners(){
+    public String findOwners() {
         return "notImplemented";
     }
 
-   /* @GetMapping("/{ownerid}")
-    public ModelAndView showOwner(@PathVariable("ownerId") Long ownerId){
+    @GetMapping("/{ownerId}")
+    public ModelAndView showOwner(@PathVariable("ownerId") Long ownerId) {
         ModelAndView mav = new ModelAndView("owners/ownerDetails");
         mav.addObject(ownerService.findById(ownerId));
-        return mav;*/
+        return mav;
+    }
 }
